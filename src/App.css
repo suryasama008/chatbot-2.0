@@ -58,7 +58,11 @@ body {
 
 .chat-container {
   position: relative;
+<<<<<<< HEAD
   height: 700px;
+=======
+  height: 500px;
+>>>>>>> origin/main
   width: 700px;
   margin: 0 auto;
   padding: 0;

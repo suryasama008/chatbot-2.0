@@ -58,7 +58,7 @@ body {
 
 .chat-container {
   position: relative;
-  height: 600px;
+  height: 700px;
   width: 700px;
   margin: 0 auto;
   padding: 0;
@@ -178,8 +178,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0275dd;
-  height: 60px;
+  color: black;
   position: fixed;
   bottom: 0;
   left: 0;

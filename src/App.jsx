@@ -4,7 +4,7 @@ import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 import Modal from 'react-modal'
 
-const API_KEY = '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'
+const API_KEY = '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'
 // "Explain things like you would to a 10 year old learning how to code."
 const systemMessage = { //  Explain things like you're talking to a software professional with 5 years of experience.
   "role": "system", "content": "Explain things like you're talking to a software professional with 2 years of experience."
@@ -87,10 +87,10 @@ console.log({ role: 'system', content: selectedOption })
       },
       body: JSON.stringify(apiRequestBody)
       }).then((data) => {
-      // console.log(data)
+      console.log(data)
       return data.json();
     }).then((data) => {
-      // console.log(data);
+      console.log(data);
       setMessages([...chatMessages, {
         message: data.choices[0].message.content,
         sender: "ChatGPT"
@@ -101,14 +101,6 @@ console.log({ role: 'system', content: selectedOption })
 
     return (
       <div className='App'>
-        <Modal
-          isOpen={isModalOpen}
-          onRequestClose={closeModal}
-          contentLabel='Example Modal'
-        >
-          <h2>Modal Title</h2>
-          <p>Modal Content</p>
-        </Modal>
         <Navbar />
         <div className='chat-container'>
           <label className='select-label'>Choose Chatbot personality:</label>

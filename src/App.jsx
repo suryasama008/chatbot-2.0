@@ -4,7 +4,7 @@ import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 import Modal from 'react-modal'
 
-const API_KEY = process.env.REACT_APP_API_KEY
+const API_KEY = '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'
 // "Explain things like you would to a 10 year old learning how to code."
 const systemMessage = { //  Explain things like you're talking to a software professional with 5 years of experience.
   "role": "system", "content": "Explain things like you're talking to a software professional with 2 years of experience."
@@ -111,7 +111,7 @@ console.log({ role: 'system', content: selectedOption })
         </Modal>
         <Navbar />
         <div className='chat-container'>
-          <label className='select-label'>Choose your Chatbot personality:</label>
+          <label className='select-label'>Choose Chatbot personality:</label>
           <SelectDropdown
             selectedOption={selectedOption}
             setSelectedOption={setSelectedOption}
@@ -205,7 +205,7 @@ function SelectDropdown({ selectedOption, setSelectedOption }) {
 function Footer() {
   return (
     <footer className='footer-container'>
-      <p>Designed and developed by [name]</p>
+      <p>Designed and developed by Surya Sama</p>
       <p>© 2023 All rights reserved</p>
     </footer>
   )

@@ -58,17 +58,17 @@ body {
 
 .chat-container {
   position: relative;
-  height: 700px;
+  height: 600px;
   width: 700px;
   margin: 0 auto;
-  margin-top: 30px;
+  padding: 0;
 }
 
 
 /* Adjust the height for smaller screens */
 @media (max-width: 768px) {
   .chat-container {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 200px);
     width: 100%;
   }
 }

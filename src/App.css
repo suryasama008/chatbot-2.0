@@ -1,0 +1,188 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Add this to your App.css */
+
+/* Set the entire outside page background color to white */
+body {
+  background-color: white;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.chat-container {
+  position: relative;
+  height: 700px;
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+
+/* Adjust the height for smaller screens */
+@media (max-width: 768px) {
+  .chat-container {
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+}
+
+/* Set the chat container background color to a dark color */
+.chat-container .chatscope-main-container {
+  background-color: #1a1a1a;
+}
+
+/* MessageList responsiveness */
+.chat-container .chatscope-message-list {
+  height: calc(100% - 80px);
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0275dd;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navbar-heading {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.navbar-subheading {
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: -5px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Responsive navbar styles */
+@media (max-width: 768px) {
+  .navbar-heading {
+    font-size: 18px;
+  }
+}
+
+/* Add this to your App.css */
+.dropdown-container {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.select-dropdown {
+  width: 100%;
+  max-width: 700px;
+  padding: 8px; /* Increase padding for a slightly taller dropdown */
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border-radius: 4px; /* Add rounded corners */
+  border: 1px solid #f0f0f0; /* Add a light-colored border */
+}
+
+.select-label {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 4px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+   justify-content: center;
+  max-width: 700px;
+}
+
+.select-dropdown:focus {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .select-dropdown {
+    width: 90%;
+  }
+}
+
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0275dd;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
